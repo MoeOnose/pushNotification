@@ -17,7 +17,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var text: UITextField!
     
     var result = ""
-    var blank = ""
     let timerNotificationIdentifier = "Id1"
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +28,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //enter押したときにkeyboard閉じるメソッド
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
-        //名前と本文に記入された文字をつなげる
-        //☁️なんで↑
-        result = name.text! + blank + text.text!
+ 
+        result = name.text! + text.text!
         
         //keyboardを閉じる
         //becomeFirstResponder()て閉じるんじゃなくて開けるんじゃ、、、、
