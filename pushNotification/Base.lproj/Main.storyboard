@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pushNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="taxt" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gRn-dJ-IQJ">
+                                <rect key="frame" x="139" y="310" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bP2-Ke-BUr">
+                                <rect key="frame" x="138" y="425" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="QhF-lP-jPz"/>
+                                    <constraint firstAttribute="height" constant="100" id="jw3-IO-KYK"/>
+                                </constraints>
+                                <state key="normal" image="pushButton.png"/>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v8j-w7-ZY5"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="human.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vuy-Gg-hOJ">
+                                <rect key="frame" x="58" y="224" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ExO-Gi-VqW"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pen.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mi7-F0-9FG">
+                                <rect key="frame" x="58" y="300" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="oZx-4e-mI7"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CGg-Ur-yQK">
+                                <rect key="frame" x="139" y="244" width="99" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vuy-Gg-hOJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="204" id="2HY-yS-opR"/>
+                            <constraint firstItem="gRn-dJ-IQJ" firstAttribute="top" secondItem="CGg-Ur-yQK" secondAttribute="bottom" constant="36" id="AsG-uu-CAQ"/>
+                            <constraint firstItem="CGg-Ur-yQK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="224" id="DcZ-ar-Kay"/>
+                            <constraint firstItem="CGg-Ur-yQK" firstAttribute="leading" secondItem="gRn-dJ-IQJ" secondAttribute="leading" id="Fl6-XR-Yyx"/>
+                            <constraint firstItem="bP2-Ke-BUr" firstAttribute="centerX" secondItem="CGg-Ur-yQK" secondAttribute="centerX" id="GTj-b5-0a4"/>
+                            <constraint firstItem="Mi7-F0-9FG" firstAttribute="top" secondItem="Vuy-Gg-hOJ" secondAttribute="bottom" constant="26" id="PzG-Bb-dLn"/>
+                            <constraint firstItem="bP2-Ke-BUr" firstAttribute="centerX" secondItem="gRn-dJ-IQJ" secondAttribute="centerX" id="Shz-nW-O8R"/>
+                            <constraint firstItem="bP2-Ke-BUr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZBY-zt-Vsx"/>
+                            <constraint firstItem="Mi7-F0-9FG" firstAttribute="trailing" secondItem="Vuy-Gg-hOJ" secondAttribute="trailing" id="czf-9G-s1s"/>
+                            <constraint firstItem="Mi7-F0-9FG" firstAttribute="leading" secondItem="Vuy-Gg-hOJ" secondAttribute="leading" id="hPd-9L-pOj"/>
+                            <constraint firstItem="CGg-Ur-yQK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="i2I-i9-y6d"/>
+                            <constraint firstItem="Vuy-Gg-hOJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="nHY-6t-0bQ"/>
+                            <constraint firstItem="gRn-dJ-IQJ" firstAttribute="bottom" secondItem="bP2-Ke-BUr" secondAttribute="top" multiplier="0.8" id="vt8-We-4UG"/>
+                            <constraint firstItem="bP2-Ke-BUr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wNa-xP-Ipx"/>
+                            <constraint firstItem="CGg-Ur-yQK" firstAttribute="leading" secondItem="Vuy-Gg-hOJ" secondAttribute="trailing" constant="31" id="zLr-2D-fGv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="name" destination="CGg-Ur-yQK" id="VGt-sP-5c7"/>
+                        <outlet property="text" destination="gRn-dJ-IQJ" id="J5W-3C-9Wb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="642" y="132"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="human.png" width="128" height="128"/>
+        <image name="pen.png" width="128" height="128"/>
+        <image name="pushButton.png" width="256" height="256"/>
+    </resources>
+</document>
